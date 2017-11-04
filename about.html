@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <script src="script.js"></script>
     <title>Kim Persson</title>
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
@@ -18,82 +20,131 @@
             </div>
             <div class="nav">
                 <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="work.html">My work</a></li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="focus">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="work.html">My work</a>
+                    </li>
                 </ul>
             </div>
         </header>
         <section class="main-content">
-            <div class="about-wrapper">
-                <section class="about-section white">
-                    <h2 class="about-title mint-underline">My Expertise</h2>
-                    <h3 class="about-subtitle">These are some of my favourite tools to work with!</h3>
-                    <div class="about-flex-container">
-                        <div class="about-flex-item">
+            <div class="page-wrapper">
+                <section class="page-section white">
+                    <h2 class="page-title">My Expertise</h2>
+                    <img class="page-title-img" src="browser.png" alt="some cool image">
+                    <h3 class="page-subtitle">These are some of my favourite tools to work with!</h3>
+                    <div class="page-flex-container">
+                        <div class="page-flex-item">
                             <div class="item-image js"></div>
                             <h3 class="item-title">Javascript</h3>
-                            <div class="item-text">I can efficiently work with js including es6+</div>
+                            <div class="item-text">I can efficiently work with moden JS including the latest features such as ES6+ and web-components.</div>
                         </div>
-                        <div class="about-flex-item">
+                        <div class="page-flex-item">
                             <div class="item-image angular"></div>
                             <h3 class="item-title">Angular</h3>
-                            <div class="item-text">I feel very comfortable working with Angular 2+ and also have some experience working with AngularJS</div>
+                            <div class="item-text">I feel very comfortable working with Angular 2+ and also have some experience working with AngularJS.</div>
                         </div>
-                        <div class="about-flex-item">
+                        <div class="page-flex-item">
                             <div class="item-image sass"></div>
                             <h3 class="item-title">CSS pre-processors</h3>
-                            <div class="item-text">I know how to work with css pre-processors such as Sass, Scss and less</div>
-                        </div> 
-                        <div class="about-flex-item">
+                            <div class="item-text">I know how to work with css pre-processors such as Sass, Scss and less and the latest CSS3 features</div>
+                        </div>
+                        <div class="page-flex-item">
                             <div class="item-image github"></div>
-                            <h3 class="item-title">version control</h3>
-                            <div class="item-text">I can efficiently work with version control repository such as github and gitlab</div>
-                        </div> 
+                            <h3 class="item-title">Version control</h3>
+                            <div class="item-text">I can efficiently work with version control repository such as github and gitlab and SVN.</div>
+                        </div>
                     </div>
-                    <h3 class="about-subtitle">And many more...</h3>
+                    <h3 class="page-subtitle">And many more...</h3>
             </div>
-                </section>
-                <section class="about-section off-white">
-                    <h2 class="about-title mint-underline">About me</h2>
-                    <h3 class="about-subtitle">Want to know more about my <a href="work.html">work?</a></h3>
-                    <b>FAQ</b>
-                    <ul class="faq">
-                        <li>Name - Kim Persson</li>
-                        <li>Age - 20</li>
-                        <li>Education - KYH Front-end Developer</li>
-                        <li>Occupation - Front-end Developer</li>
-                        <li>Hobbies - Motocross and videogames</li>
-                        <li>Favourite food - noobs</li>
-                    </ul>
-                    <b>Work experience</b>
-                    <ul class="faq">
-                        <li>Apptus Technologies - 2017-></li>
-                    </ul>
-                </section>
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-item">
+            </section>
+            <section class="page-section off-white">
+                <h2 class="page-title">About me</h2>
+                <img class="page-title-img" src="development.png" alt="some cool image">
+                <h3 class="page-subtitle">Want to know more about my
+                    <a href="work.html">work?</a>
+                </h3>
+                <b>FAQ</b>
+                <ul class="faq">
+                    <li>Name - Kim Persson</li>
+                    <li>Age - 20</li>
+                    <li>Education - KYH Front-end Developer</li>
+                    <li>Occupation - Front-end Developer</li>
+                    <li>Hobbies - Motocross and videogames</li>
+                    <li>Favourite food - noobs</li>
+                </ul>
+                <b>Work experience</b>
+                <ul class="faq">
+                    <li>Apptus Technologies - 2017-></li>
+                </ul>
+            </section>
+            <section class="page-section white">
+                <div class="contact-card">
+                    <header class="contact-header">
+                        <h2 class="contact-title">Have any questions or want to contact me?</h2>
+                    </header>
+                    <form class="contact-form">
+                        <label for="name" class="contact-label">Name</label>
+                        <input class="contact-input" type="text" name="name" id="name">
+                        <label for="email" class="contact-label">E-Mail</label>
+                        <input class="contact-input" type="email" name="email" id="email">
+                        <label for="text" class="contact-label">Text</label>
+                        <textarea class="contact-input big-textarea" type="text" name="text" id="text"></textarea>
+                        <button id="submit-btn" class="contact-submit-btn">Send</button>
+                    </form>
+                </div>
+            </section>
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-item">
                 <p>Quick navigation</p>
                 <ul class="quick-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="work.html">My work</a></li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="work.html">My work</a>
+                    </li>
                 </ul>
             </div>
             <div class="footer-item">
-                <p>Social media</p>
+                <p class="social-menu-title">Social media</p>
                 <ul class="social-menu">
-                    <li><a class="fa fa-instagram" href="instagram.com/kpw0w"></a></li>
-                    <li><a class="fa fa-github" href="github.com/kaiiler"></a></li>
-                    <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/kim-persson-394475143/"></a></li>
+                    <li>
+                        <a class="fa fa-instagram" href="instagram.com/kpw0w"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-github" href="github.com/kaiiler"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-linkedin" href="https://www.linkedin.com/in/kim-persson-394475143/"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-codepen" href="https://codepen.io/Kaiiler/"></a>
+                    </li>
                 </ul>
             </div>
+            <div class="footer-item">
+                <p>Contact</p>
+                <span class="footer-contact">
+                    <small>Phone: +46 736 323 474</small>
+                    <small>E-mail: Kaiiler@live.se</small>
+                </span>
             </div>
-        </footer>
+        </div>
+    </footer>
     </div>
-    
+
 </body>
+
 </html>
