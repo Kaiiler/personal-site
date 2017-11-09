@@ -27,7 +27,7 @@ body {
 }
 .main-content  {
     grid-area: main;
-    background-image: url('background-image.jpg');
+    background-image: url('assets/background-image.jpg');
     background-size: cover;
     background-blend-mode: darken;
     min-height:75.7vh;
@@ -90,7 +90,7 @@ body {
     align-items: center;
 }
 .image {
-    background-image: url('kim.jpg');
+    background-image: url('assets/kim.jpg');
     background-size: cover;
     border: 2px solid var(--accent-color);
     border-radius: 50%;
@@ -177,19 +177,19 @@ body {
     margin-bottom: 50px;
 }
 .js {
-    background-image: url('js.png');
+    background-image: url('assets/js.png');
 }
 .github {
-    background-image: url('git.png');
+    background-image: url('assets/git.png');
 }
 .sass {
-    background-image: url('sass.png');
+    background-image: url('assets/sass.png');
 }
 .angular {
-    background-image: url('angular.png');
+    background-image: url('assets/angular.png');
 }
 .apptus-lp {
-    background-image: url('apptus-lp.png');
+    background-image: url('assets/apptus-lp.png');
     background-size:contain;
 }
 
@@ -262,6 +262,7 @@ body {
     font-size: 20px;
     width: 140px;
     height: 50px;
+    margin-bottom:100px;
     cursor: pointer;
 }
 .contact-btn:hover {
